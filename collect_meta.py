@@ -1,6 +1,6 @@
 import requests
 import json
-from tqdm import trange, tqdm
+from tqdm import trange
 import os
 
 
