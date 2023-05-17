@@ -10,6 +10,8 @@
 
 ["14 Mayıs 2023 Milletvekili Genel Seçimi Oy ve Ötesi Tutanak Linkleri"](https://drive.google.com/file/d/1q6N6MHOXfHTEGNDpGjTU3CF_TV3v7KPF/view?usp=sharing)
 
+[Raw Data]()
+
 ### Metadata
 
 We first gathered school ids to scrape the results of each polling center easily via the OvO API. You can use the command below to collect this metadata:
@@ -21,5 +23,11 @@ We first gathered school ids to scrape the results of each polling center easily
 You should use the command below to collect the election results of each poll with the Ovo API:
 
     python main.py
+
+### Processing Data
+
+You should use the following command to post-process the data:
+
+    python process.py
 
     

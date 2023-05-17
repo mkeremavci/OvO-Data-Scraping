@@ -3,6 +3,7 @@ import json
 from tqdm import tqdm
 import os
 import time
+import random
 
 with open('meta.json', 'r') as f:
     meta_data = json.load(f)
@@ -24,7 +25,6 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36'
     }
 
-counter = 0
 
 for ckey, city in tqdm(list(meta_data.items())):
     if ckey in scraped:
@@ -48,16 +48,16 @@ for ckey, city in tqdm(list(meta_data.items())):
             for skey, sid in neigh.items():
                 scraped[ckey][dkey][nkey][skey] = {}
                 
-                time.sleep(0.5)
                 sUrl = f"{url}/{sid}"
-                response = requests.get(sUrl, headers=headers)
-                print(response)
+                status_code = 0
+                while status_code != 200:
+                    response = requests.get(sUrl, headers=headers)
+                    status_code = response.status_code
+                    time.sleep(random.uniform(2, 5))
+                    print(status_code)
                 data = response.json()
 
-                counter += 1
-                if counter % 10 == 0:
-                    counter = 0
-                    time.sleep(2)
+                time.sleep(random.uniform(0.25, 1))
                 
                 for d in data:
                     scraped[ckey][dkey][nkey][skey][d['ballot_box_number']] = {
