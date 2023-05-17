@@ -1,3 +1,12 @@
+.DS_Store
+.vscode
+
+# Our Data due to GitHub's file size limits
+cb_urls.json
+mv_urls.json
+ovo_cb.json
+ovo_mv.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
