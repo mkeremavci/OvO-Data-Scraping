@@ -2,6 +2,7 @@
 .vscode
 
 # Our Data due to GitHub's file size limits
+data.json
 cb_urls.json
 mv_urls.json
 ovo_cb.json
