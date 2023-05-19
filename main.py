@@ -5,12 +5,12 @@ import os
 import time
 import random
 
-with open('meta.json', 'r') as f:
+with open('data/meta.json', 'r') as f:
     meta_data = json.load(f)
 
 
-if os.path.exists('data.json'):
-    with open('data.json', 'r') as f:
+if os.path.exists('data/data.json'):
+    with open('data/data.json', 'r') as f:
         scraped = json.load(f)
 else:
     scraped = {}
@@ -66,5 +66,5 @@ for ckey, city in tqdm(list(meta_data.items())):
                     }
                 
 
-        with open('data.json', 'w') as f:
+        with open('data/data.json', 'w') as f:
             f.write(json.dumps(scraped, indent=4))

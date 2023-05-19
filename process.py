@@ -2,10 +2,10 @@ import json
 from tqdm import tqdm
 
 
-with open("data.json", "r") as f:
+with open("data/data.json", "r") as f:
     scraped = json.load(f)
 
-with open("parti_listesi.json", "r") as f1, open("cb_listesi.json", "r") as f2, open("matches.json", "r") as f3:
+with open("data/parti_listesi.json", "r") as f1, open("data/cb_listesi.json", "r") as f2, open("data/matches.json", "r") as f3:
     parti_listesi = json.load(f1)
     cb_listesi = json.load(f2)
     matches = json.load(f3)
@@ -98,7 +98,7 @@ for match in tqdm(matches):
                             mv_ovo[match[1]]['ilceler'][d]['sandiklar'][idx]['adaylar'][mv_adaylar[vk]] = vv
                             
     
-with open("ovo_cb.json", "w") as f1, open("ovo_mv.json", "w") as f2, open("cb_urls.json", "w") as f3, open("mv_urls.json", "w") as f4:
+with open("data/ovo_cb.json", "w") as f1, open("data/ovo_mv.json", "w") as f2, open("data/cb_urls.json", "w") as f3, open("data/mv_urls.json", "w") as f4:
     f1.write(json.dumps(cb_ovo, indent=4))
     f2.write(json.dumps(mv_ovo, indent=4))
     f3.write(json.dumps(cb_urls, indent=4))

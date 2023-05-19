@@ -3,9 +3,12 @@ import json
 from tqdm import trange
 import os
 
+if os.path.exists('data'):
+    os.mkdir('data')
 
-if os.path.exists('meta.json'):
-    with open('meta.json', 'r') as f:
+
+if os.path.exists('data/meta.json'):
+    with open('data/meta.json', 'r') as f:
         meta_data = json.load(f)
 else:
     meta_data = {}
@@ -41,5 +44,5 @@ for i in trange(len(meta_data) + 1, 82):
             
             meta_data[i][nname][sname] = {x['name']: x['id'] for x in data}
     
-    with open('meta.json', 'w') as f:
+    with open('data/meta.json', 'w') as f:
         f.write(json.dumps(meta_data, indent=4))
