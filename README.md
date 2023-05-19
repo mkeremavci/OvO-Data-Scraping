@@ -10,7 +10,9 @@
 
 ["14 Mayıs 2023 Milletvekili Genel Seçimi Oy ve Ötesi Tutanak Linkleri"](https://drive.google.com/file/d/1q6N6MHOXfHTEGNDpGjTU3CF_TV3v7KPF/view?usp=sharing)
 
-[Raw Data]()
+[Raw Data](https://drive.google.com/file/d/1iHhHIgjPOupt70HXYi_t0Iq0P3Yu6rue/view?usp=sharing)
+
+[Raw Data v2](https://drive.google.com/file/d/1RySPU-_qsEkyEeidifEnzHOmW_HNfdDt/view?usp=sharing)
 
 ### Metadata
 
