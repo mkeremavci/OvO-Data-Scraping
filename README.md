@@ -22,6 +22,10 @@
 
 ["14 Mayıs 2023 Milletvekili Genel Seçimi Oy ve Ötesi Tutanak Linkleri" v2](https://drive.google.com/file/d/1q6N6MHOXfHTEGNDpGjTU3CF_TV3v7KPF/view?usp=sharing)
 
+["14 Mayıs 2023 Seçimleri Sandık Listesi"](https://drive.google.com/file/d/15mLyFlV6-pX7Lej7QNEHsJqtIH8rzztu/view?usp=sharing)
+
+["14 Mayıs 2023 Seçimleri YSK Sandık İstatistikleri"](https://docs.google.com/spreadsheets/d/1RchxSJlEYjN8dXi0nn5ROEaRApsXMQ5R/edit?usp=sharing&ouid=110274593961655206191&rtpof=true&sd=true)
+
 [Raw Data](https://drive.google.com/file/d/1iHhHIgjPOupt70HXYi_t0Iq0P3Yu6rue/view?usp=sharing)
 
 [Raw Data v2](https://drive.google.com/file/d/1RySPU-_qsEkyEeidifEnzHOmW_HNfdDt/view?usp=sharing)
